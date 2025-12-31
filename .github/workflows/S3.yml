@@ -2,7 +2,7 @@ name: Delopy Html to s3
 on: push
 jobs:
   Depoly:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code from repo
         uses: actions/checkout@v4
