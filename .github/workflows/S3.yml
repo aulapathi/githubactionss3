@@ -16,5 +16,5 @@ jobs:
         run: |
           aws s3 sync ./ s3://s3bucketforgithubactions/ \
           --exclude "*" \
-          --include "imdex.html"
+          --include "index.html"
       
