@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple One Page App</title>
+
+  <!-- CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 300px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #4facfe;
+      color: white;
+    }
+
+    button:hover {
+      background: #00c6fb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HTML -->
+  <div class="card">
+    <h1>Hello!</h1>
+    <p id="message">Click the button to change this text.</p>
+    <button onclick="changeText()">Click Me</button>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function changeText() {
+      const messages = [
+        "You clicked the button 🎉",
+        "JavaScript is working ✅",
+        "Have a great day 😄",
+        "This is a single-page app!"
+      ];
+
+      const randomIndex = Math.floor(Math.random() * messages.length);
+      document.getElementById("message").textContent = messages[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
