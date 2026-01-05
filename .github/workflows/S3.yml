@@ -1,5 +1,5 @@
 name: Delopy Html to s3
-on: push
+on: 
 jobs:
   Depoly:
     runs-on: ubuntu-latest
