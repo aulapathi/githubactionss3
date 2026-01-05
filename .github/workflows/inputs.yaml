@@ -6,6 +6,7 @@ on:
         description: choose the env to depoloy
         required: true
         default: dev
+        type: choice
         options:
           - dev
           - test
