@@ -6,9 +6,17 @@ on:
         description: choose the env to depoloy
         required: true
         default: dev
+        options:
+          - dev
+          - test
+          - prod
+      artfacts_tags:
+        description: choose the env to depoloy
+        required: true
+        
 jobs:
   inputs-demo:
     runs-on: ubuntu-latest
     steps:
       - name: inputsparmeter
-        run: echo "depolying the application to ${{inputs.environment}}"
+        run: echo "depolying the ${{inputs.artfacts_tags}} application to ${{inputs.environment}}"
