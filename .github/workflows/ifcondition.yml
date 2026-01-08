@@ -1,9 +1,6 @@
 name: if condition
 on:
-  push:
-    branches:
-      - dev
-      - main
+  
 jobs:
   Job1:
     runs-on: ubuntu-latest
