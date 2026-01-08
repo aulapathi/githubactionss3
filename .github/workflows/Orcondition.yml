@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: step1
         if: github.actor == 'Saikiran' || github.actor == 'aulapathi'
-        run: echo "Saikiran is tiggered the file" 
+        run: echo "Saikiran is tiggered the file............................" 
       - name: step2
-        run: echo "saikiran is a waste fellow"
+        run: echo "saikiran is a waste fellow''''''''''''''''''''''''"
     
     
       
